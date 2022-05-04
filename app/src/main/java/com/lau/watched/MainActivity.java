@@ -28,12 +28,12 @@ public class MainActivity extends AppCompatActivity {
         //check if the username is found and the password is correct
         //if it is found: go to the Home Page
         //if not, get a message that the username or password entered is wrong
-        if(/*found*/){
+        //if(/*found*/){
             Intent intnt = new Intent(getApplicationContext(),Home.class);
             startActivity(intnt);
-        }
-        else{
-            res.setText("Username or Password entered is not correct.");
-        }
+        //}
+        //else{
+        //    res.setText("Username or Password entered is not correct.");
+        //}
     }
 }
