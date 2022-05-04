@@ -29,7 +29,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.01999998"
-        app:srcCompat="@drawable/download" />
+        app:srcCompat="@drawable/search"
+        tools:ignore="SpeakableTextPresentCheck" />
 
     <ImageView
         android:id="@+id/ProfileBTN"
@@ -42,5 +43,68 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.019"
-        app:srcCompat="@drawable/images" />
+        app:srcCompat="@drawable/images"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <androidx.gridlayout.widget.GridLayout
+        android:layout_width="409dp"
+        android:layout_height="655dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+
+        <ImageView
+            android:id="@+id/serie1"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="15dp"
+            android:onClick="info"
+            android:tag="0"
+            app:layout_column="0"
+            app:layout_row="0"
+            app:srcCompat="@drawable/_loki"
+            />
+
+        <ImageView
+            android:id="@+id/img2"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="15dp"
+            android:layout_marginLeft="26dp"
+            android:onClick="info"
+            android:tag="1"
+            app:layout_column="1"
+            app:layout_row="0"
+            app:srcCompat="@drawable/moon_knight"/>
+
+        <ImageView
+            android:id="@+id/img1"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="15dp"
+            android:onClick="info"
+            android:tag="0"
+            app:layout_column="0"
+            app:layout_row="1"
+            app:srcCompat="@drawable/wanda"/>
+
+        <ImageView
+            android:id="@+id/img4"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="15dp"
+            android:layout_marginLeft="26dp"
+            android:onClick="info"
+            android:tag="1"
+            app:layout_column="1"
+            app:layout_row="1"
+            app:srcCompat="@drawable/dex"/>
+
+
+    </androidx.gridlayout.widget.GridLayout>
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

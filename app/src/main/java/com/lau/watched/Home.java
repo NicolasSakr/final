@@ -14,14 +14,20 @@ public class Home extends AppCompatActivity {
         setContentView(R.layout.activity_home);
     }
 
-    //Go to the search page to search for movies
+    //Go to the search page to search for other users and see their ratings
     public void goToSearch(View v){
         Intent searchInt = new Intent(getApplicationContext(),SearchPg.class);
         startActivity(searchInt);
     }
-    //go to the Profile page
+    //go to your Profile page
     public void goToProfile(View v){
         Intent profInt = new Intent(getApplicationContext(),Profile.class);
         startActivity(profInt);
+    }
+    public void info(View v){
+
+        Intent in = new Intent(getApplicationContext(), info.class);
+        startActivity(in);
+
     }
 }
