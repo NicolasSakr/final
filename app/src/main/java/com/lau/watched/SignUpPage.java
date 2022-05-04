@@ -20,9 +20,9 @@ public class SignUpPage extends AppCompatActivity {
         setContentView(R.layout.activity_sign_up_page);
         pass = (EditText) findViewById(R.id.Password);
         verifyPass = (EditText) findViewById(R.id.VerifyPass);
-        res = (TextView) findViewById(R.id.errorText)
+        res = (TextView) findViewById(R.id.errorText);
     }
-    public void btnOnClick(View v){
+    public void btnOnclick(View v){
         if(verifyPass.toString() == pass.toString()){
             //add the information to the database
 
