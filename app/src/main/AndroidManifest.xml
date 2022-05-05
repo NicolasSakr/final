@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Watched">
         <activity
+            android:name=".progress"
+            android:exported="false" />
+        <activity
             android:name=".Info"
             android:exported="false" />
         <activity
