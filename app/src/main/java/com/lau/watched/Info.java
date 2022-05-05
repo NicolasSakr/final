@@ -25,7 +25,7 @@ public class Info extends AppCompatActivity {
         img = (ImageView) findViewById(R.id.poster);
         ttl = (TextView) findViewById(R.id.titleInfo);
 
-        //get info from intent
+        //get info from intent from the previous page.
         Intent x = getIntent();
         String title = x.getStringExtra("name");
         ttl.setText(title);
