@@ -5,10 +5,14 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.SeekBar;
+import android.widget.TextView;
 import android.widget.Toast;
 
 public class progress extends AppCompatActivity {
-    int e1,e2,e3,e4,e5,e6;
+    int e1,e2,e3,e4,e5,e6,rtd;
+    SeekBar seek;
+    TextView rating,ttl;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,6 +24,13 @@ public class progress extends AppCompatActivity {
         e4=0;
         e5=0;
         e6=0;
+        rtd=0;
+        rating = (TextView) findViewById(R.id.userRating);
+        seek = (SeekBar) findViewById(R.id.seekRating);
+        ttl = (TextView) findViewById(R.id.titleInfo);
+        Intent x = getIntent();
+        String title = x.getStringExtra("name");
+        ttl.setText(title);
     }
 
     public void back(View v){
@@ -32,7 +43,15 @@ public class progress extends AppCompatActivity {
     }
     public void rated(View v){
         //send POST to the database to save the user's rating
-
+        int x;
+        if(rtd==0){
+            x=seek.getProgress();
+            rating.setText("Your Rating is: "+x);
+            rtd=1;
+        }else{
+            x=seek.getProgress();
+            rating.setText("Your New Rating is: "+x);
+        }
     }
     //POST to tell the db which episode is watched and which is not
     public void watched1(View v){

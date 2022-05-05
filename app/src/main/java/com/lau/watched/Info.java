@@ -10,7 +10,7 @@ import android.widget.TextView;
 
 public class Info extends AppCompatActivity {
 
-    TextView ovr, rate, cast;
+    TextView ovr, rate, cast, ttl;
     ImageView img;
 
     @Override
@@ -23,12 +23,15 @@ public class Info extends AppCompatActivity {
         rate = (TextView) findViewById(R.id.rating);
         cast = (TextView) findViewById(R.id.cast);
         img = (ImageView) findViewById(R.id.poster);
+        ttl = (TextView) findViewById(R.id.titleInfo);
 
         //get info from intent
         Intent x = getIntent();
+        String title = x.getStringExtra("name");
+        ttl.setText(title);
         String info = x.getStringExtra("overview");
         ovr.setText(info);
-        String ratings = x.getStringExtra("lbp");
+        String ratings = x.getStringExtra("rating");
         rate.setText(ratings);
         String casts = x.getStringExtra("cast");
         cast.setText(casts);
@@ -40,6 +43,8 @@ public class Info extends AppCompatActivity {
     }
     public void gotoProg(View v){
         Intent prog = new Intent(getApplicationContext(), progress.class);
+        String showTitle = findViewById(R.id.titleInfo).getContext().toString();
+        prog.putExtra("usd",showTitle);
         startActivity(prog);
     }
 }
