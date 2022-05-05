@@ -6,4 +6,204 @@
     android:layout_height="match_parent"
     tools:context=".progress">
 
+    <Button
+        android:id="@+id/progress"
+        android:layout_width="176dp"
+        android:layout_height="43dp"
+        android:text="Progress"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.897"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/info_overview"
+        android:layout_width="184dp"
+        android:layout_height="42dp"
+        android:onClick="gotoInfo"
+        android:text="OverView"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.101"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/backBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="back"
+        android:text="Back"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.877" />
+
+    <Switch
+        android:id="@+id/e05"
+        android:layout_width="263dp"
+        android:layout_height="32dp"
+        android:onClick="watched5"
+        android:text="Episode 5"
+        app:layout_constraintBottom_toTopOf="@+id/backBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.412"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/s01"
+        app:layout_constraintVertical_bias="0.536" />
+
+    <Switch
+        android:id="@+id/e06"
+        android:layout_width="263dp"
+        android:layout_height="32dp"
+        android:onClick="watched6"
+        android:text="Episode 6"
+        app:layout_constraintBottom_toTopOf="@+id/backBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.412"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/s01"
+        app:layout_constraintVertical_bias="0.654" />
+
+    <Switch
+        android:id="@+id/e03"
+        android:layout_width="263dp"
+        android:layout_height="32dp"
+        android:onClick="watched3"
+        android:text="Episode 3"
+        app:layout_constraintBottom_toTopOf="@+id/backBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.412"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/s01"
+        app:layout_constraintVertical_bias="0.315" />
+
+    <Switch
+        android:id="@+id/e02"
+        android:layout_width="263dp"
+        android:layout_height="32dp"
+        android:onClick="watched2"
+        android:text="Episode 2"
+        app:layout_constraintBottom_toTopOf="@+id/backBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.412"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/s01"
+        app:layout_constraintVertical_bias="0.2" />
+
+    <Switch
+        android:id="@+id/e01"
+        android:layout_width="263dp"
+        android:layout_height="32dp"
+        android:onClick="watched1"
+        android:text="Episode 1"
+        app:layout_constraintBottom_toTopOf="@+id/backBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.412"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/s01"
+        app:layout_constraintVertical_bias="0.09" />
+
+    <Switch
+        android:id="@+id/e04"
+        android:layout_width="263dp"
+        android:layout_height="32dp"
+        android:onClick="watched4"
+        android:text="Episode 4"
+        app:layout_constraintBottom_toTopOf="@+id/backBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.412"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/s01"
+        app:layout_constraintVertical_bias="0.424" />
+
+    <TextView
+        android:id="@+id/s01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Season 1:"
+        android:textColor="@color/purple_500"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/backBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.18"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/info_overview"
+        app:layout_constraintVertical_bias="0.16000003" />
+
+    <TextView
+        android:id="@+id/s"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rate This Show:"
+        android:textColor="@color/purple_500"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/seekRating"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.205"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/e06"
+        app:layout_constraintVertical_bias="0.645" />
+
+    <TextView
+        android:id="@+id/s2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="10"
+        android:textColor="@color/purple_500"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/seekRating"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.9"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/e06"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/s3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textColor="@color/purple_500"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/seekRating"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.104"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/e06"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <SeekBar
+        android:id="@+id/seekRating"
+        style="@style/Widget.AppCompat.SeekBar.Discrete"
+        android:layout_width="276dp"
+        android:layout_height="21dp"
+        android:max="10"
+        android:onClick="rated"
+        android:progress="0"
+        app:layout_constraintBottom_toTopOf="@+id/backBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/e06"
+        app:layout_constraintVertical_bias="0.572" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="256dp"
+        android:layout_height="42dp"
+        android:text="Submit Rating"
+        app:layout_constraintBottom_toTopOf="@+id/backBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/seekRating"
+        app:layout_constraintVertical_bias="1.0" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
